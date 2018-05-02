@@ -1,0 +1,15 @@
+language: none
+
+services:
+   - couchdb 
+
+
+build:
+  pre_ci_boot:
+    image_name: drydock/c7all
+    image_tag: master
+    pull: true
+    
+  ci:
+     - /opt/couchdb/bin/couchdb
+     - curl http://127.0.0.1:5984/
