@@ -9,7 +9,7 @@ build:
     image_name: drydock/c7all
     image_tag: master
     pull: true
-    options: -v $SHIPPABLE_REPO_DIR/couchdb.sh:/usr/local/bin/shippable_services/couchdb.sh
+    options: -v couchdb.sh:/usr/local/bin/shippable_services/couchdb.sh
     
   ci:
      - ps aux
