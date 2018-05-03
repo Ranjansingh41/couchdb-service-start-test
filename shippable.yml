@@ -11,5 +11,6 @@ build:
     pull: true
     
   ci:
+     - ps aux
      - ps aux | grep couchdb | grep -v shippable_service | awk '{print $2}'
 
