@@ -12,5 +12,5 @@ build:
     
   ci:
      - ps aux
-     - ps aux | grep couchdb | grep -v shippable_service | awk '{print $2}'
+     - ps aux | grep [c]ouchdb | grep -v shippable_service | awk '{print $2}'
 
