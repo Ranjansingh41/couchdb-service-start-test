@@ -11,5 +11,4 @@ build:
     pull: true
     
   ci:
-     - /opt/couchdb/bin/couchdb
-     - curl http://127.0.0.1:5984/
+    
