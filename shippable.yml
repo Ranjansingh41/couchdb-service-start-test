@@ -13,4 +13,5 @@ build:
   ci:
      - ps aux
      - ps aux | grep [c]ouchdb | grep -v shippable_service | awk '{print $2}'
+     - kill -9 $(ps aux | grep [c]ouchdb | grep -v shippable_service | awk '{print $2}')
 
