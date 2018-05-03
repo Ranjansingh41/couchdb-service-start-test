@@ -11,4 +11,5 @@ build:
     pull: true
     
   ci:
-    
+     - echo SHIPPABLE_COUCHDB_BINARY=$SHIPPABLE_COUCHDB_BINARY
+
