@@ -12,6 +12,4 @@ build:
     
     
   ci:
-     - cp -rf $SHIPPABLE_REPO_DIR/couchdb.sh /usr/local/bin/shippable_services/couchdb.sh
-     - ps aux
-     - ps aux | grep [c]ouchdb | grep -v shippable_service | awk '{print $2}'
+     - ls
