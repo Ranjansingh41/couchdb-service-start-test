@@ -1,7 +1,7 @@
 language: none
 
 services:
-    - mysql
+    - neo4j 
 
 
 build:
@@ -12,5 +12,4 @@ build:
     
     
   ci:
-      - mysql --version
-      - ls 
+     - /var/lib/neo4j/bin/neo4j version
