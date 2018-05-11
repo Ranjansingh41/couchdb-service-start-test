@@ -1,7 +1,7 @@
 language: none
 
 services:
-   - elasticsearch 
+   - cassandra
 
 
 build:
@@ -12,5 +12,4 @@ build:
     
     
   ci:
-    - elasticsearch --version
-    - gosu --version
+    - cassandra -v
