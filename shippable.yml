@@ -13,3 +13,4 @@ build:
     
   ci:
       - mysql --version
+      - ls 
