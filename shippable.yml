@@ -1,7 +1,7 @@
 language: none
 
 services:
-   - couchdb 
+   - cassandra 
 
 
 build:
