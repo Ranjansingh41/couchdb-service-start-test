@@ -1,7 +1,7 @@
 language: none
 
 services:
-    - postgres 
+    - sqlite3 
 
 
 build:
@@ -12,4 +12,4 @@ build:
     
     
   ci:
-     - psql --version
+     - sqlite3 --version
