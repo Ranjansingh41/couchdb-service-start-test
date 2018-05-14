@@ -1,7 +1,7 @@
 language: none
 
 services:
-    - redis 
+    - selenium 
 
 
 build:
@@ -12,4 +12,4 @@ build:
     
     
   ci:
-     - redis-server --version
+     - java -jar /usr/local/selenium/selenium-server-standalone-3.11.0.jar --version
