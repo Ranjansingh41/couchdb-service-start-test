@@ -1,15 +1,15 @@
 language: none
 
 services:
-    - selenium 
+    - java 
 
 
 build:
   pre_ci_boot:
-    image_name: drydock/u16all
+    image_name: drydock/u16
     image_tag: master
     pull: true
     
     
   ci:
-     - java -jar /usr/local/selenium/selenium-server-standalone-3.11.0.jar --version
+     - java -version
