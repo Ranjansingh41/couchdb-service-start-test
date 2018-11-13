@@ -1,17 +1,13 @@
 language: none
 
+jdk:
+ - openjdk8
+ 
 services:
    - cassandra 
    
+   
+   
 build:
-  pre_ci:
-    - shippable_jdk set openjdk8
-
-  pre_ci_boot:
-    image_name: drydock/u16javall
-    image_tag: master
-    pull: true
-    
-    
   ci:
-     - java -version
+    - echo ranjan
