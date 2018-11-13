@@ -1,8 +1,15 @@
 language: none
 
+services:
+   - cassandra 
+   
+build:
+  pre_ci:
+    - shippable_jdk set openjdk8
+
 build:
   pre_ci_boot:
-    image_name: drydock/u16
+    image_name: drydock/u16javall
     image_tag: master
     pull: true
     
